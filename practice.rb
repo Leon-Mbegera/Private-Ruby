@@ -15,3 +15,8 @@ dates = [2005, 2007, 2017]
 puts dates[0]
 puts dates[1]
 puts dates[2]
+
+#factorial of numbers
+
+factorial_of_8 = 8 *  7 *  6 *  5 *  4 *  3  * 2  *  1
+puts factorial_of_8

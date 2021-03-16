@@ -44,11 +44,27 @@ MY_NAME = "John Doe"
 # global variables are available throughout the program; overriding all scope boundaries
 $MY_NAME = "John Doe"
 
-# class variables are accessible by instances of your class as well as class itself
-@@MY_NAME = "John Doe"
+
 
 # instance variables are available throughout an instance of the parent class
 @MY_NAME = "John Doe"
 
 # local variable are only accessible inside the scope of method 
 my_name = "John Doe"
+
+
+# defining a method
+ def sayHello 
+  puts 'Hi guys!'
+ end
+
+ # method invocation
+ sayHello
+
+
+ # passing parameter and arguments to methods
+ def sayHi(classmate)
+  puts "hi " + classmate
+ end
+
+ sayHi("Trukid")

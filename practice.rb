@@ -24,3 +24,31 @@ puts factorial_of_8
 # squares of floats
 puts 4.8 * 4.8
 puts 5.6 * 5.6
+
+# Declaring and assigning variables
+first_name = "Joe \n"
+puts first_name
+
+# Variable scope
+
+a = 5
+
+3.times do |n|
+  a = 8
+end
+puts a
+
+#constant variables is declared by capitalizing every letter in the variable name
+MY_NAME = "John Doe" 
+
+# global variables are available throughout the program; overriding all scope boundaries
+$MY_NAME = "John Doe"
+
+# class variables are accessible by instances of your class as well as class itself
+@@MY_NAME = "John Doe"
+
+# instance variables are available throughout an instance of the parent class
+@MY_NAME = "John Doe"
+
+# local variable are only accessible inside the scope of method 
+my_name = "John Doe"

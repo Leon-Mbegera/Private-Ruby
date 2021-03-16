@@ -20,3 +20,7 @@ puts dates[2]
 
 factorial_of_8 = 8 *  7 *  6 *  5 *  4 *  3  * 2  *  1
 puts factorial_of_8
+
+# squares of floats
+puts 4.8 * 4.8
+puts 5.6 * 5.6

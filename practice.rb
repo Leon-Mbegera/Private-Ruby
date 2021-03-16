@@ -1,3 +1,5 @@
 # Adding, subtracting and multiplying integers
 
-1 + 1
+def (a, b)
+  #gets the sum of a and b using the + operator
+end

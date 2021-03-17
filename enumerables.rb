@@ -10,3 +10,17 @@ for fruit in fruits do
 end
 
 puts favorite_fruits
+
+
+# using enumerable select method
+fruits = ["Avocado", "Pineapple", "Apples", "Mangoes", "Macademia"]
+
+fruits = fruits.select {|fruit| fruit != "Macademia"}
+puts fruits
+
+# The each enumerable method
+fruits = ["Avocado", "Pineapple", "Apples", "Mangoes", "Macademia"]
+
+fruits.each { |fruit| puts fruit + " is my favorite fruit" }
+
+

@@ -24,3 +24,13 @@ fruits = ["Avocado", "Pineapple", "Apples", "Mangoes", "Macademia"]
 fruits.each { |fruit| puts fruit + " is my favorite fruit" }
 
 
+# The do...end block is used when the block of code occupies multiple lines
+
+my_array = [1, 4, 7]
+
+my_array.each do |number|
+  number *= 7
+  puts "The new value is #{number}" 
+end
+
+

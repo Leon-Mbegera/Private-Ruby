@@ -33,4 +33,19 @@ my_array.each do |number|
   puts "The new value is #{number}" 
 end
 
+# The each enumerable method in hashes
+
+my_hash = {:lemon => "bitter", :orange => "juicy", :banana => "sweet"}
+
+my_hash.each { |key, value| puts "#{key} is #{value}"}
+
+# The each_with_index enumerable method
+
+my_array = [1, 4, 7, 9, 3, 8]
+
+my_array.each_with_index {|num, index| puts num if num.odd?}
+
+
+
+
 

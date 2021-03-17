@@ -45,6 +45,20 @@ my_array = [1, 4, 7, 9, 3, 8]
 
 my_array.each_with_index {|num, index| puts num if num.odd?}
 
+# The map method
+fruits = ["Avocado", "Pineapple", "Apples", "Mangoes", "Macademia"]
+
+fruits.map {|fruit| puts fruit.upcase}\
+
+# gsub method
+
+my_order = ["Chapo beans", "Rice beans"]
+my_order.map {|order| puts order.gsub("beans", "beef")}
+
+my_salaries = [10000, 34000, 18498, 32455]
+my_salaries.map {|salary| puts salary * 13}
+
+
 
 
 

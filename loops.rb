@@ -58,3 +58,18 @@ end
 while gets.chomp != "yes!"
   puts "Wacuka, I want to wife you"
 end
+
+
+# UNTIL loop with count
+
+i = 2
+until i > 20
+  puts "I'm on level #{i}"
+  i*=3
+end
+
+# UNTIL loop to repeatedly ask question
+
+until gets.chomp == "yes!"
+  puts "I want you to have my baby"
+end

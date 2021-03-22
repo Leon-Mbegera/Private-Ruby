@@ -52,3 +52,9 @@ while i < 10 do
   i+=3
 
 end
+
+# WHILE loop to repeatedly ask question
+
+while gets.chomp != "yes!"
+  puts "Wacuka, I want to wife you"
+end

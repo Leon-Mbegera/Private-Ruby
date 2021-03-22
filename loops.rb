@@ -75,7 +75,17 @@ until gets.chomp == "yes!"
 end
 
 
-# RANGES
+# RANGES 
 
 (2..10)            # Inclusive range 2, 3, 4, 5, 6, 7, 8, 9, 10
 (2...10)           # Exclusive range 2, 3, 4, 5, 6, 7, 8, 9
+
+# For loop
+
+for i in (1..5) do
+  puts "Life is tough man!"  
+end
+
+for i in (1...5) do
+  puts "Persons need a hand man!" 
+end

@@ -73,3 +73,9 @@ end
 until gets.chomp == "yes!"
   puts "I want you to have my baby"
 end
+
+
+# RANGES
+
+(2..10)            # Inclusive range 2, 3, 4, 5, 6, 7, 8, 9, 10
+(2...10)           # Exclusive range 2, 3, 4, 5, 6, 7, 8, 9

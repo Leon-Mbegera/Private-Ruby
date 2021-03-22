@@ -42,3 +42,13 @@ loop do
   puts "You're a #{rat}"
 break
 end
+
+
+# WHILE loop with a count
+
+i = 0
+while i < 10 do
+  puts "She's on level #{i}"
+  i+=3
+
+end

@@ -89,3 +89,11 @@ end
 for i in (1...5) do
   puts "Persons need a hand man!" 
 end
+
+
+# Upto and Downto loops
+
+6.upto(11) {|number| print "#{number}" + " "}
+
+11.downto(4) {|number| puts "#{number}" + " "}
+

@@ -1,6 +1,3 @@
-
-
-
 #print out values from a list of hash symbols
 
 movies = {:Django_Unchained => 2005, :Death_proof => 2007, :Hateful_eight => 2017}
@@ -68,3 +65,9 @@ my_name = "John Doe"
  end
 
  sayHi("Trukid")
+
+
+ arr = [2, 8, 7, 5, 3]
+ puts indices = arr.length
+ puts elements = arr.size
+

@@ -87,7 +87,7 @@ for i in (1..5) do
 end
 
 for i in (1...5) do
-  puts "Persons need a hand man!" 
+  puts "Persons need a hand yo!" 
 end
 
 
@@ -95,5 +95,47 @@ end
 
 6.upto(11) {|number| print "#{number}" + " "}
 
-11.downto(4) {|number| puts "#{number}" + " "}
+11.downto(4) {|number| puts "#{number}"}
 
+
+# Recursion: The act of calling a method from within itself
+
+def doubler(start)
+  start = 14
+  puts start
+  if start < 10
+    doubler(start * 2)
+  end
+end
+
+
+# Exercise 1
+
+x = [3, 5, 8, 1, 9]
+x.each do |integer|         # Tip: .each method will always return the original variable contents
+  integer + 3
+end
+puts x
+
+# Exercise 2
+
+puts "Hi, what's your name?"
+name = gets.chomp
+response = ""
+while response != 'I said no! damn it!' do
+  puts "#{name}, I really like you. Can I take you out?"
+  response = gets.chomp
+end
+
+
+# Exercise 3
+
+def count_to_zero(num)
+  if num <= 0 
+    puts num
+  else
+    puts num
+    count_to_zero(num - 1) 
+  end
+end
+count_to_zero(3)

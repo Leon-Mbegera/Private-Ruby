@@ -59,6 +59,11 @@ my_salaries = [10000, 34000, 18498, 32455]
 my_salaries.map {|salary| puts salary * 13}
 
 
+# select method
+
+fruits = ["Avocado", "Pineapple", "Apples", "Mangoes", "Macademia"]
+fruits.select {|fruit| puts fruit != "Macademia"}
+
 
 
 

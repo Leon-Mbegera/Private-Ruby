@@ -2,7 +2,13 @@
 
 puts "What is your name?"
 name = gets.chomp
-puts "How are you doing " + name + "!\n"
+puts "How are you " + name + "!"
+
+10.times do
+  puts name
+end
+
+
 
 #Getting user age and giving feedback
 puts "How old are you?"

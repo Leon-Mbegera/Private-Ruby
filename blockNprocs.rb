@@ -24,3 +24,17 @@ def doubler(number)
 end
 
 doubler(76) {|x| puts x * 5}
+
+# defining and calling a proc
+trippler = Proc.new {|num| num * 3.0}
+puts trippler.call(7)
+
+
+is_even = Proc.new do |i|
+  if i % 2 != 0
+   puts "odd"
+  else
+    puts "even"
+  end
+end
+p is_even.call(13)

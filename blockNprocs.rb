@@ -15,3 +15,12 @@ fibb = [5, 8, 2, 7, 11, 32, 45, 67]
 doubled_fibb = []
 doubled_fibb = fibb.collect {|integer| integer * 2}
 puts doubled_fibb
+
+
+# yield
+
+def doubler(number)
+  yield (number)
+end
+
+doubler(76) {|x| puts x * 5}

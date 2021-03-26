@@ -31,4 +31,6 @@ puts "\n"
 
 puts [4, 6, 2, 9].inject {|acc, ele| acc * ele}
 
+# inject with a default accumulator
 
+puts [4, 6, 2, 9].inject(12) {|acc, ele| acc * ele} 

@@ -13,3 +13,6 @@ arr.each do |integer|
   end
 end
 
+# 3 use select method to print odd integers
+
+arr.select {|integer| puts integer if integer.odd?}

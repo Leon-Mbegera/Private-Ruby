@@ -37,3 +37,12 @@ puts "\n"
 
 arr.pop
 print arr
+
+puts "\n"
+
+#6 remove duplicate element
+arr << 5
+print arr
+
+arr.uniq!
+print arr

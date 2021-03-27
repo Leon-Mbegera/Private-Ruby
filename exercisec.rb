@@ -116,7 +116,19 @@ puts "\n"
 words = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 
 words.delete_if do |word|
-  word.end_with?("s",)
+  word.end_with?("s")
 end
 
 print words
+
+puts "\n"
+puts "\n"
+
+#13 use map, flatten, and split methods
+
+nature = ['white snow', 'winter wonderland', 'melting ice',
+  'slippery sidewalk', 'salted roads', 'white trees']
+
+nature = nature.map {|pair| pair.split}
+nature = nature.flatten
+print nature

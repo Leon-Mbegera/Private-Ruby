@@ -94,7 +94,29 @@ contacts["Joe Smith"][:address] = contact_data[0][1]
 contacts["Joe Smith"][:phone] = contact_data[0][2]
 
 contacts["Sally Johnson"][:email] = contact_data[1][0]
-contacts["Sally Johnson"][:email] = contact_data[1][1]
-contacts["Sally Johnson"][:email] = contact_data[1][2]
+contacts["Sally Johnson"][:address] = contact_data[1][1]
+contacts["Sally Johnson"][:phone] = contact_data[1][2]
 
 print contacts
+
+puts "\n"
+puts "\n"
+
+#11
+
+puts contacts["Joe Smith"][:email]
+puts contacts["Sally Johnson"][:phone]
+
+puts "\n"
+puts "\n"
+
+
+#12 use delete_if and start_with methods
+
+words = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+
+words.delete_if do |word|
+  word.start_with?("s", "w")
+end
+
+print words

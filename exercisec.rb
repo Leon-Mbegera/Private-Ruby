@@ -32,3 +32,8 @@ print arr
 
 
 puts "\n"
+
+#5 remove element from array
+
+arr.pop
+print arr

@@ -116,7 +116,7 @@ puts "\n"
 words = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 
 words.delete_if do |word|
-  word.start_with?("s", "w")
+  word.end_with?("s",)
 end
 
 print words

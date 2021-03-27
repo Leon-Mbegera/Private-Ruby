@@ -46,3 +46,13 @@ print arr
 
 arr.uniq!
 print arr
+
+puts "\n"
+
+#7 difference btn array and hash
+
+array = ["software", "civil"]
+hash = {kca: "software", ku: "civil"}
+
+puts array[0]
+puts hash[:ku]

@@ -56,3 +56,12 @@ hash = {kca: "software", ku: "civil"}
 
 puts array[0]
 puts hash[:ku]
+
+puts "\n"
+
+#8 Create a Hash, with one key-value pair, using both Ruby syntax styles.
+
+hash1 = {:course => "software development"}
+hash2 = {course: "software development"}
+puts hash1
+puts hash2

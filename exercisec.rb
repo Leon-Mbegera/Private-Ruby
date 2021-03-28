@@ -172,9 +172,26 @@ puts "\n"
 
 def larger_number(num1, num2)
   if num1 > num2 && num1 != num2
-    puts num1
+    return num1
   else
-    puts num2
+    return num2
   end
 end
-larger_number(42, 56)
+puts larger_number(42, 56)
+
+puts "\n"
+
+#17 longer string
+
+def longer_string(str1, str2)
+  if str1.length > str2.length || str1.length == str2.length
+    return str1
+  else
+    return str2
+  end  
+
+end
+
+puts longer_string("app", "academy") # => "academy"
+puts longer_string("summer", "fall") # => "summer"
+puts longer_string("hello", "world") # => "hello"

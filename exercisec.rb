@@ -132,3 +132,49 @@ nature = ['white snow', 'winter wonderland', 'melting ice',
 nature = nature.map {|pair| pair.split}
 nature = nature.flatten
 print nature
+
+puts "\n"
+puts "\n"
+
+#14 
+
+hash3 = {shoes: "nike", "hat" => "adidas", :hoodie => true}
+hash4 = {"hat" => "adidas", :shoes => "nike", hoodie: true}
+
+if hash3 == hash4
+  puts "These hashes are the same!"
+else
+  puts "These hashes are not the same!"
+end
+
+#15
+
+puts "\n"
+puts "\n"
+
+# def is_div_by_5(number)
+#   if number % 5 == 0
+#     return true
+#   else
+#     return false
+#   end
+# end
+
+def is_div_by_5(number)
+  return number % 5 == 0
+end
+
+puts is_div_by_5(15)
+
+puts "\n"
+
+#16 Larger number
+
+def larger_number(num1, num2)
+  if num1 > num2 && num1 != num2
+    puts num1
+  else
+    puts num2
+  end
+end
+larger_number(42, 56)

@@ -195,3 +195,23 @@ end
 puts longer_string("app", "academy") # => "academy"
 puts longer_string("summer", "fall") # => "summer"
 puts longer_string("hello", "world") # => "hello"
+
+puts "\n"
+
+#18 word check
+
+def word_check(word)
+  if word.length > 6
+    return "long"
+  elsif
+    word.length < 6
+    return "short"
+  else
+    word.length == 6
+    return "medium"
+  end
+end
+
+puts word_check("contraption") # => "long"
+puts word_check("fruit")       # => "short"
+puts word_check("puzzle")      # => "medium"

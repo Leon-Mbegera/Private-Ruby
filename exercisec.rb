@@ -235,3 +235,25 @@ def count_e(word)
   
   puts count_e("movie") # => 1
   puts count_e("excellent") # => 3
+
+  puts "\n"
+  
+  #20 count both lowercase a's and uppercase "A's"
+
+  def count_a(word)
+    count = 0
+    idx = 0
+    while idx < word.length
+      if word[idx] == "a" || word[idx] == "A"
+        count += 1
+      end
+      idx += 1
+    end
+    return count
+  end
+  
+  puts count_a("application")  # => 2
+  puts count_a("bike")         # => 0
+  puts count_a("Arthur")       # => 1
+  puts count_a("Aardvark")     # => 3
+

@@ -257,3 +257,24 @@ def count_e(word)
   puts count_a("Arthur")       # => 1
   puts count_a("Aardvark")     # => 3
 
+  puts "\n"
+
+  #21 no. of vowels in a word
+
+  def count_vowels(word)
+    vowels = 0
+    idx = 0
+    while idx <= word.length - 1
+      if word[idx] == "a" || word[idx] == "e" || word[idx] == "i" || word[idx] == "o" || word[idx] == "u" 
+        vowels += 1
+      end
+      idx += 1
+    end
+    return vowels
+  
+  end
+  
+  puts count_vowels("bootcamp")  # => 3
+  puts count_vowels("apple")     # => 2
+  puts count_vowels("pizza")     # => 2
+

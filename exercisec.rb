@@ -330,6 +330,8 @@ def count_e(word)
 
   puts reversed("I hope you miss me")
 
+  puts "\n"
+
 
   #23 palindrome
 
@@ -351,6 +353,29 @@ puts is_palindrome("racecar")  # => true
 puts is_palindrome("kayak")    # => true
 puts is_palindrome("bootcamp") # => false
 
+puts "\n"
+
+#24 double elements of array 
+
+def doubler(numbers)
+  doubled_arr = []
+  i = 0
+  while i < numbers.length
+    orig_num = numbers[i]
+    doubled_num = orig_num * 2
+    doubled_arr << doubled_num
+    i += 1
+    
+  end
+  return doubled_arr
+
+end
+
+print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]
+puts
+print doubler([7, 1, 8])    # => [14, 2, 16]
+
+puts "\n"
 
 
 

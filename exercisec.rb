@@ -296,3 +296,21 @@ def count_e(word)
   puts sum_nums(11)
   puts sum_nums(4)
 
+  puts "\n"
+
+  #22 factorial of number
+
+  def factorial(num)
+    product = 1
+    start = 1
+    while start <= num
+      product *= start
+      start += 1
+    end
+    return product
+    
+  end
+  
+  puts factorial(3) # => 6, because 1 * 2 * 3 = 6
+  puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+

@@ -476,6 +476,27 @@ print odd_range(11, 18) # => [11, 13, 15, 17]
 puts
 print odd_range(3, 7)   # => [3, 5, 7]
 
+puts "\n"
+
+#30 Array of numbers of a given range printed in reverse order
+
+def reverse_range(min, max)
+  reverse_array = []
+  i = max - 1
+  while i > min
+    reverse_array << i
+    i -= 1
+  end
+  reverse_array
+
+end
+
+print reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]
+puts
+print reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
+
+
+
 
 
   

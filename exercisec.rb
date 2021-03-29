@@ -455,6 +455,27 @@ print range(2, 7)   # => [2, 3, 4, 5, 6, 7]
 puts
 print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 
+puts "\n"
+
+#29 array containing odd numbers from range of min-max
+
+def odd_range(min, max)
+  odd_arr = []
+  i = min
+  while i <= max
+    if i % 2 != 0
+      odd_arr << i
+    end
+    i += 1
+  end
+  return odd_arr
+
+end
+
+print odd_range(11, 18) # => [11, 13, 15, 17]
+puts
+print odd_range(3, 7)   # => [3, 5, 7]
+
 
 
   

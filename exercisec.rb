@@ -415,6 +415,26 @@ print element_times_index([4, 7, 6, 5])       # => [0, 7, 12, 15]
 puts
 print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
 
+puts"\n"
+
+#27 Return all even numbers from 0 to given numbers
+
+def even_nums(max)
+  even = []
+  i = 0
+  while i <= max 
+    if i % 2 == 0
+      even << i
+    end
+    i += 1
+  end
+  return even
+end
+
+print even_nums(10) # => [0, 2, 4, 6, 8, 10]
+puts
+print even_nums(5)  # => [0, 2, 4]
+
 
 
 

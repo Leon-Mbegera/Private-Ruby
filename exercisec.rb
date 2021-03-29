@@ -331,6 +331,27 @@ def count_e(word)
   puts reversed("I hope you miss me")
 
 
+  #23 palindrome
+
+  def is_palindrome(word)
+    idx = 0
+    reversed_str = ""
+    while idx <= word.length - 1
+      reversed_str = word[idx] + reversed_str
+      idx += 1
+    end
+    if reversed_str == word
+      return true
+    else
+      return false
+    end
+  end
+
+puts is_palindrome("racecar")  # => true
+puts is_palindrome("kayak")    # => true
+puts is_palindrome("bootcamp") # => false
+
+
 
 
 

@@ -257,7 +257,7 @@ def count_e(word)
   puts count_a("Arthur")       # => 1
   puts count_a("Aardvark")     # => 3
 
-  puts "\n"
+ 
 
   #21 no. of vowels in a word
 
@@ -277,4 +277,22 @@ def count_e(word)
   puts count_vowels("bootcamp")  # => 3
   puts count_vowels("apple")     # => 2
   puts count_vowels("pizza")     # => 2
+
+  puts "\n"
+
+  #21 sum of all preceding integers
+
+  def sum_nums(max)
+    start = 1
+    sum = 0 
+
+    while start <= max
+      sum += start
+      start += 1
+    end
+    return sum
+  end
+
+  puts sum_nums(11)
+  puts sum_nums(4)
 

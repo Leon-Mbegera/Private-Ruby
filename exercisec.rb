@@ -435,6 +435,25 @@ print even_nums(10) # => [0, 2, 4, 6, 8, 10]
 puts
 print even_nums(5)  # => [0, 2, 4]
 
+puts"\n"
+
+#28 return array containing numbers in range of min-max
+
+def range(min, max)
+  arr = []
+  i = min
+  while i <= max
+    arr << i
+
+    i += 1
+  end
+  return arr
+
+end
+
+print range(2, 7)   # => [2, 3, 4, 5, 6, 7]
+puts
+print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 
 
 

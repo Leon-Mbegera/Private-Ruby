@@ -377,6 +377,44 @@ print doubler([7, 1, 8])    # => [14, 2, 16]
 
 puts "\n"
 
+#25
+
+def yell(words)
+  yelling = []
+  idx = 0
+  while idx < words.length
+    old_word = words[idx]
+    new_word = old_word + "!"
+    yelling << new_word
+    idx += 1
+  end
+	return yelling
+end
+
+print yell(["hello", "world"]) # => ["hello!", "world!"]
+puts
+print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
+
+puts"\n"
+
+#26 Element times its index
+
+def element_times_index(numbers)
+  new_arr =[]
+  idx = 0
+  while idx < numbers.length
+    that_num = numbers[idx]
+    new_num = that_num * idx
+    new_arr << new_num
+    idx += 1
+  end
+	return new_arr
+end
+
+print element_times_index([4, 7, 6, 5])       # => [0, 7, 12, 15]
+puts
+print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
+
 
 
 

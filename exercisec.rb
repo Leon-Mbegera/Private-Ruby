@@ -314,3 +314,26 @@ def count_e(word)
   puts factorial(3) # => 6, because 1 * 2 * 3 = 6
   puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
 
+  puts "\n"
+
+  #22 reversed string 
+
+  def reversed(word)
+    idx = 0
+    reversed_str = ""
+    while idx < word.length
+      reversed_str = word[idx] + reversed_str
+      idx +=1 
+    end
+    return reversed_str
+  end
+
+  puts reversed("I hope you miss me")
+
+
+
+
+
+  
+
+

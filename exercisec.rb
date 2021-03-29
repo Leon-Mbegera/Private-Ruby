@@ -215,3 +215,23 @@ end
 puts word_check("contraption") # => "long"
 puts word_check("fruit")       # => "short"
 puts word_check("puzzle")      # => "medium"
+
+puts "\n"
+
+#19 count e's
+
+def count_e(word)
+  idx = 0
+  es = 0
+    while idx < word.length
+      if word[idx] == "e"
+        es += 1
+      end
+      idx += 1
+    end
+    return es
+    
+  end
+  
+  puts count_e("movie") # => 1
+  puts count_e("excellent") # => 3
